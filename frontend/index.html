@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Testaxces | Practice App</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Testaxces Practice App</h1>
+      <p class="subtitle">Flask + Supabase + JS ES6 Practice</p>
+
+      <!-- STEP: Add User Form -->
+      <section id="add-user">
+        <h2>Add User</h2>
+        <input type="text" id="name" placeholder="Name" />
+        <input type="email" id="email" placeholder="Email" />
+        <button onclick="addUser()">Add User</button>
+      </section>
+
+      <!-- STEP: Display Users -->
+      <section id="users-list">
+        <h2>Users List</h2>
+        <button onclick="loadUsers()">Load Users</button>
+        <ul id="users"></ul>
+      </section>
+
+      <!-- STEP: API Status -->
+      <div id="status"></div>
+    </div>
+    <script type="module" src="js/main.js"></script>
+  </body>
+</html>
